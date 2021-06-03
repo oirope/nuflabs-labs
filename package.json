@@ -19,7 +19,6 @@
     "url": "https://github.com/oirope/nuflabs-labs/issues"
   },
   "dependencies": {
-    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "get-port": "^5.1.1"
   },

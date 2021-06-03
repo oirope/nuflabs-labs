@@ -1,8 +1,5 @@
-import * as dotenv from 'dotenv';
 import * as express from 'express';
 import * as getPort from 'get-port';
-
-dotenv.config();
 
 (async () => {
 	const app = express();

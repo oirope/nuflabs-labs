@@ -4,9 +4,9 @@ import * as getPort from 'get-port';
 (async () => {
 	const app = express();
 
-	app.set('port', await getPort({ port: 3000 }));
+	const port = await getPort({ port: 3000 });
 
-	app.listen(app.get('port'));
-	if (process.env.NODE_ENV === 'development')
-		console.log(`Labs running on: http://localhost:${app.get('port')}`);
+	app.listen(port, () => {
+		console.log(`Labs running on: http://localhost:${port}`);
+	});
 })();
